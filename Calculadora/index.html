@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8">
+        <title>CalculadoraScript
+        </title>
+        <link rel="stylesheet" type="text/css" href="index.css" media="screen" /> 
+        <script type="text/javascript">
+            bandera();
+            sumar();
+            vaciar();
+            Calcular();
+            restar();
+            var total = 0;
+            var opc = '';
+            function bandera(numero){
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                calculo.value += numero;                
+                }
+            }
+            
+            function sumar(){ 
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                total = parseFloat(calculo.value);
+                calculo.value = '';
+                }
+                opc = '+'
+            }
+            
+            function restar(){ 
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                total = parseFloat(calculo.value);
+                calculo.value = '';
+                }
+                opc = '-'
+            }
+            
+            function multiplicar(){ 
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                total = parseFloat(calculo.value);
+                calculo.value = '';
+                }
+                opc = '*'
+            }
+            
+            function dividir(){ 
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                total = parseFloat(calculo.value);
+                calculo.value = '';
+                }
+                opc = '/'
+            }
+            
+            function vaciar(){
+                var calculo = document.getElementById("calculo");
+                calculo.value = '';
+            }
+            
+            function Calcular(){
+                var calculo = document.getElementById("calculo");
+                if (calculo != null) {
+                    switch(opc){
+                        case '+':
+                            total += parseFloat(calculo.value);
+                            calculo.value = total;
+                            break;
+                        case '-':
+                            total -= parseFloat(calculo.value);
+                            calculo.value = total;
+                            break;
+                        case '*':
+                            total = total * parseFloat(calculo.value);
+                            calculo.value = total;
+                            break;
+                        case '/':
+                            total = total / parseFloat(calculo.value);
+                            calculo.value = total;
+                            break;
+                    }
+                            total = 0;
+                }
+            }
+        
+        </script>
+    </head>
+    <body>
+        
+        <header class="cabecera">
+            <h1>CALCULADORA</h1>
+        </header>
+        <div>
+        </div>
+        <div class="centro">
+            <form id="presentacion">
+                <textarea rows="1" cols="30" id="calculo"></textarea><br>
+                <input type="button" value="1" id="uno" onclick="bandera(1)">
+                <input type="button" value="2" id="dos" onclick="bandera(2)">
+                <input type="button" value="3" id="tres" onclick="bandera(3)">
+                <input type="button" value="+" id="mas" onclick="sumar()">
+                <input type="button" value="4" id="cuatro" onclick="bandera(4)">
+                <input type="button" value="5" id="cinco" onclick="bandera(5)">
+                <input type="button" value="6" id="seis" onclick="bandera(6)">
+                <input type="button" value="-" id="menos" onclick="restar()">
+                <input type="button" value="7" id="siete" onclick="bandera(7)">
+                <input type="button" value="8" id="ocho" onclick="bandera(8)">
+                <input type="button" value="9" id="nueve" onclick="bandera(9)">
+                <input type="button" value="*" id="por" onclick="multiplicar()">
+                <input type="button" value="0" id="cero" onclick="bandera(0)">
+                <input type="button" value="." id="punto" onclick="bandera('.')">
+                <input type="button" value="C" id="vaciariar" onclick="vaciar()">
+                <input type="button" value="/" id="dividido" onclick="dividir()">
+                <input type="button" value="=" id="igual" onclick="Calcular()">
+                
+            </form>
+        </div>
+                        
+    </body> 
+    
+    
+</html>

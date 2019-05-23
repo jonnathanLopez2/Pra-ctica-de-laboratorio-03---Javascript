@@ -1,0 +1,29 @@
+*{
+    background-color: white;
+    padding: 1em;
+}
+
+#ant{
+    border: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+#alet{
+    border: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+#ade{
+    border: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+#presentacion{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,95 @@
+
+html{
+    background: #d8d8d8;
+    background-size:100% 100%;
+    background-attachment:fixed;
+}
+
+#formularioRegistro{
+    width:450px;
+    background-color:rgba(0, 0, 0.51, 0.51);
+    padding:35px 45px 90px 50px;
+    margin:auto;
+    margin-top:65px;
+    border-radius:9px
+}
+.input{
+    color:#3c3c3c;
+    font-family:pricipal;
+    font-size:18px;
+    line-height:22px;
+    background-color:whitesmoke;
+    padding:13x 13px 13px 54px; 
+    margin-bottom:10px;
+    width:100%;
+    box-sizing:border-box;   
+
+}
+
+.input:focus{
+
+    background-color: aqua;
+    border: 3px solid #3498db;
+    color:#1b8f31;
+    padding: 13px 13px 13px 54px;
+
+}
+
+#cedula{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+#nombre{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+#apellido{
+    background-size: 30px 30px;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+#direccion{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+
+#telefono{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+
+#fechana{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+
+#correo{
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+#enviar{
+    font-family:principal;
+    float: left;
+    width: 100%;
+    border: #fff solid 4px;
+    background-color: black;
+    font-size: 35px;
+    font-weight: 670px;
+    padding-top: 22px;
+    color: white;
+    border-radius: 1em;
+}
+
